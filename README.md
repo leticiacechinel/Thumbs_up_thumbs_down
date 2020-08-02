@@ -6,9 +6,13 @@ arquivo: model_certi.py
 * Redução de dimensionalidade (escala de cinza), transformação para ponto flutuante, normalização.
 * Foi criado um modelo supervisionado utilizando redes neurais convolucionais, com auxílio das bibliotecas tensorflow e keras.
 
+![]("CERTI_TESTE/certi.png")
+
 **Observações**:
 Também foram testadas outras possibilidades, como adaptar um modelo pronto, formatando as imagens e alterando apenas a camada de saída. Também foi levantada a possibilidade de se utilizar o n-shot learning, não supervisionado e ideal para comparações e bases pequenas. Apesar disso seguiu-se com as CNNs.
 Como o resultado foi satisfatório, não se verificou a utilização de outros filtros de pré processamento.
+
+
 
 **Instrução de uso:**
 
