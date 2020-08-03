@@ -15,6 +15,7 @@ Também foram testadas outras possibilidades, como adaptar um modelo pronto, for
 Como o resultado foi satisfatório, não se verificou a utilização de outros filtros de pré processamento.
 
 
+![alt text](https://github.com/leticiacechinel/Thumbs_up_thumbs_down/blob/master/CERTI_TESTE/summary_final.png)
 
 ## **Instrução de uso:**
 
