@@ -25,7 +25,7 @@ selecionar as imagens entre as pastas, a interface já retorna o resultado do mo
 é possível adicionar nas pastas outras imagens de "thumbs up" e "thumbs down" e testar a performance do modelo.
 
 ## **Concepção do modelo**:
-arquivo: model_certi.py
+arquivo: model_certi_final.py
 * Data augmentation: aumentar e generalizar a base. Nessa etapa foram geradas novas imagens a partir de uma base bastante reduzida (menos de 40 imagens) geradas por mim para treinar o modelo. Foram criadas novas imagens utilizando zoom, pequenos deslocamentos, espelhamento e rotação, expondo a rede a maiores variaçoes.
 * Redução de dimensionalidade (escala de cinza), transformação para ponto flutuante, normalização.
 * Foi criado um modelo supervisionado utilizando redes neurais convolucionais, com auxílio das bibliotecas tensorflow e keras.
