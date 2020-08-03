@@ -16,35 +16,35 @@ import random
 ############ DATA AUGMENTATION, OBTENDO MAIS DADOS E GENERALIZANDO DATASET ####################
 
 
-# datagen = ImageDataGenerator(
-#         rotation_range=5,
-#         width_shift_range=0.2,
-#         height_shift_range=0.2,
-#         shear_range=0.2,
-#         zoom_range=0.2,
-#         horizontal_flip=True,
-#         fill_mode='nearest')
+datagen = ImageDataGenerator(
+        rotation_range=5,
+        width_shift_range=0.2,
+        height_shift_range=0.2,
+        shear_range=0.2,
+        zoom_range=0.2,
+        horizontal_flip=True,
+        fill_mode='nearest')
 
-# path = 'thumbs/'
-# for folder in os.listdir(path):
-#     path_ = path + folder + '/'
-#     # print("FOLDER ",folder)
-#     for file in os.listdir(path_):
-#         # print(file)
-#         if file.endswith('.jpeg') and not "_gen" in file:
+path = 'thumbs/'
+for folder in os.listdir(path):
+    path_ = path + folder + '/'
+    # print("FOLDER ",folder)
+    for file in os.listdir(path_):
+        # print(file)
+        if file.endswith('.jpeg') and not "_gen" in file:
             
-#             img = load_img(path_+file) 
-#             x = img_to_array(img)  
-#             x = x.reshape((1,) + x.shape)
+            img = load_img(path_+file) 
+            x = img_to_array(img)  
+            x = x.reshape((1,) + x.shape)
 
-#             # the .flow() command below generates batches of randomly transformed images
-#             # and saves the results to the `preview/` directory
-#             i = 0
-#             for batch in datagen.flow(x, batch_size=1,
-#                                       save_to_dir='thumbs/'+folder, save_prefix=str(folder)+'_gen', save_format='jpeg'):
-#                 i += 1
-#                 if i > 5:
-#                     break  # Recurso de parada do gerador
+            # the .flow() command below generates batches of randomly transformed images
+            # and saves the results to the `preview/` directory
+            i = 0
+            for batch in datagen.flow(x, batch_size=1,
+                                      save_to_dir='thumbs/'+folder, save_prefix=str(folder)+'_gen', save_format='jpeg'):
+                i += 1
+                if i > 5:
+                    break  # Recurso de parada do gerador
 
 
 ########### LEITURA DE ARQUIVOS, TRANSFORMACAO 1 CANAL, TRANSFORMACAO PARA PONTO FLUTUANTE E NORMALIZACAO ###########
