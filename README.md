@@ -2,8 +2,11 @@
 
 ## **Instrução de uso 1 (montando container docker):**
 baixar o diretório completo
+
 dentro do diretório no terminal, rodar **sudo docker build -t certiapp .**
+
 após montar, **sudo docker run -p 8501:8501 certiapp:latest**
+
 Usar o network URL que aparecerá para abrir o aplicativo no seu browser
 
 
