@@ -1,0 +1,10 @@
+1) Se você fizesse parte de um pequeno time de desenvolvedores, quais técnicas ferramentas você recomendaria para resolver esses desafio e por que?
+
+Acredito que poderíamos utilizar um algoritmo de segmentação semântica para identificar os botes salva-vidas e embarcações. Haveria primeiramente a etapa de criação de máscaras manualmente para identificar os objetos nas imagens.  Após, seriam avaliadas algumas técnicas de pré processamento de imagem para melhorar a classificação. Eu recomendaria uma rede neural convolucional para fazer a classificação das imagens, onde necessitaria de uma etapa de avaliação dos melhores parâmetros do modelo para esse problema em questão. 
+
+2)E se o o projeto fosse só pra avaliar a viabilidade técnica, com orçamento e prazo apertados pra montar uma demo funcional, usaria as mesmas técnicas e ferramentas?
+
+Não. Criar a base de treino e fazer a concepção do modelo é algo que certamente demandaria tempo e custo de serviço de desenvolvedores ou especialistas. Nesse caso eu utilizaria algum modelo já pré treinado de identificação de objetos. Existem alguns já bem conhecidos como o Mask-R-CNN, provavelmente nesse caso tentaria essa abordagem. Também procuraria na literatura outras soluções disponíveis para problema parecidos, como o de classificação de navios em imagens de satélite que já é um problema mais consolidado no meio.
+
+3)Qual o maior empecilho, na sua opinião, que poderia impactar o início do projeto?
+Rotulação da base.
